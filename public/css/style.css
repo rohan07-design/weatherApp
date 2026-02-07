@@ -1,0 +1,71 @@
+body {
+      min-height: 100vh;
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.45),
+          rgba(0, 0, 0, 0.45)
+        ),
+        url("https://images.unsplash.com/photo-1501973801540-537f08ccae7b");
+      background-size: cover;
+      background-position: center;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .weather-box {
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(15px);
+      border-radius: 25px;
+      padding: 35px 30px;
+      width: 100%;
+      max-width: 380px;
+      color: #fff;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .weather-box h2 {
+      font-weight: 600;
+    }
+
+    .search-bar input {
+      border-radius: 30px 0 0 30px;
+      padding-left: 20px;
+    }
+
+    .search-bar button {
+      border-radius: 0 30px 30px 0;
+      background: #ffcc00;
+      border: none;
+    }
+
+    .search-bar button i {
+      color: #000;
+    }
+
+    .weather-icon {
+      width: 110px;
+      margin: 15px 0;
+    }
+
+    .temperature {
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    .weather-desc {
+      letter-spacing: 1px;
+      opacity: 0.9;
+    }
+
+    .info-box {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    .info-box i {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
