@@ -37,26 +37,18 @@
       </h2>
 
       <!-- Search -->
-       <form action="/" method="post">
-         <div class="input-group search-bar mb-4">
-           <input type="text" class="form-control" name="city" placeholder="Search city..." />
-           <button class="btn">
-             <i class="fa-solid fa-magnifying-glass"></i>
-           </button>
-         </div>
-       </form>
+      <form class="search-box" action="/" method="POST">
+        <input type="text" name="city" placeholder="Search city…" required />
+        <button type="submit">🔍</button>
+      </form>
 
       <!-- Weather Icon -->
-      <img
-        src="<%=icon%>"
-        class="weather-icon"
-        alt="weather"
-      />
+      <img src="<%=icon%>" class="weather-icon" alt="weather" />
 
       <!-- Weather Info -->
       <h4><%= city%></h4>
       <div class="temperature"><%= temp%>°C</div>
-      <div class="weather-desc mb-4" style="font-size:20px;"><%= weather%></div>
+      <div class="weather-desc mb-4" style="font-size: 20px"><%= weather%></div>
 
       <!-- Extra Info -->
       <div class="row g-3">

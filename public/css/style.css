@@ -35,19 +35,45 @@ body {
   font-weight: 600;
 }
 
-.search-bar input {
-  border-radius: 30px 0 0 30px;
-  padding-left: 20px;
+.search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  border-radius: 50px;
+  padding: 6px 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.search-bar button {
-  border-radius: 0 30px 30px 0;
-  background: #ffcc00;
+.search-box input {
+  flex: 1;
   border: none;
+  outline: none;
+  background: transparent;
+  padding: 12px 14px;
+  font-size: 1rem;
+  color: #1f2933;
 }
 
-.search-bar button i {
-  color: #000;
+.search-box input::placeholder {
+  color: rgba(31, 41, 51, 0.6);
+}
+
+.search-box button {
+  border: none;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.search-box button:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
 }
 
 .weather-icon {

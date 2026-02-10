@@ -2,12 +2,13 @@ import express from "express";
 import axios from "axios";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import { nextTick } from "process";
+require("dotenv").config();
+
 
 const app = express();
 const port = 3000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const key = "5531cc6cf2d4943264880a06793be118";
+const key = process.env.OPENWEATHER_API_KEY;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
