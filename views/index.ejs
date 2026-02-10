@@ -54,9 +54,9 @@
       />
 
       <!-- Weather Info -->
-      <h4>New York</h4>
-      <div class="temperature">26°C</div>
-      <div class="weather-desc mb-4">Sunny</div>
+      <h4><%= city%></h4>
+      <div class="temperature"><%= temp%>°C</div>
+      <div class="weather-desc mb-4"><%= weather%></div>
 
       <!-- Extra Info -->
       <div class="row g-3">
@@ -64,14 +64,14 @@
           <div class="info-box">
             <i class="fa-solid fa-wind"></i>
             <div>Wind</div>
-            <strong>12 km/h</strong>
+            <strong><%= wind%> km/h</strong>
           </div>
         </div>
         <div class="col-6">
           <div class="info-box">
             <i class="fa-solid fa-droplet"></i>
             <div>Humidity</div>
-            <strong>65%</strong>
+            <strong><%= huminity%>%</strong>
           </div>
         </div>
       </div>
