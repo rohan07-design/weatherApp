@@ -66,13 +66,13 @@ npm start
 
 ⚙️ Deployment
 
--This app is deployed on Render
+- This app is deployed on Render
 
--The server listens on the port assigned by Render via process.env.PORT.
+- The server listens on the port assigned by Render via process.env.PORT.
 
--The start script uses node index.js for production.
+- The start script uses node index.js for production.
 
--The API key is securely stored as an environment variable in Render dashboard.
+- The API key is securely stored as an environment variable in Render dashboard.
 
 📂 Project Structure
 
