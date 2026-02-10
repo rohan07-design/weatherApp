@@ -48,7 +48,9 @@ cd weatherApp
 
 2. Install Dependencies
 
+```bash
 npm install
+```
 
 3. Create a .env file in the root folder and add your API key:
 
@@ -56,12 +58,13 @@ OPENWEATHER_API_KEY=your_api_key_here
 
 4. Start the app locally (with live reload):
 
+```bash
 npm start
+```
 
 ⚙️ Deployment
 
 This app is deployed on Render
-.
 
 The server listens on the port assigned by Render via process.env.PORT.
 
