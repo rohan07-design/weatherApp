@@ -1,8 +1,9 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express from "express";
 import axios from "axios";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-require("dotenv").config();
 
 
 const app = express();
