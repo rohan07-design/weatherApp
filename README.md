@@ -53,8 +53,10 @@ npm install
 ```
 
 3. Create a .env file in the root folder and add your API key:
-
+   
+```bash
 OPENWEATHER_API_KEY=your_api_key_here
+```
 
 4. Start the app locally (with live reload):
 
